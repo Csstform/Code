@@ -1,7 +1,7 @@
 from util.hook import *
 
 
-@hook(cmds=['mute'], admin=True, thread=False)
+@hook(cmds=['mute', 'stfu'], admin=True, thread=False)
 def mute(code, input):
     code.mute()
     return code.action('is now muted.')
